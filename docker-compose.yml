@@ -17,7 +17,7 @@ services:
       retries: 5
 
   app:
-    image: ghcr.io/Nik974/cinema-sys:latest
+    image: ghcr.io/nik974/cinema-sys:latest
     container_name: cinema-app
     ports:
       - "8080:8080"
