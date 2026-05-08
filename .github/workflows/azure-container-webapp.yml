@@ -43,6 +43,6 @@ jobs:
         run: |
           az webapp config container set \
             --name ${{ env.AZURE_WEBAPP_NAME }} \
-            --resource-group cinema-rg \
+            --resource-group DefaultResourceGroup-DEWC \
             --multicontainer-config-type compose \
             --multicontainer-config-file docker-compose.yml
