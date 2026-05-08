@@ -167,8 +167,7 @@
 </main>
 
 <script>
-  const API   = 'http://localhost:8080/api';
-  const token = sessionStorage.getItem('token');
+  const API = '/api';  const token = sessionStorage.getItem('token');
   if (!token) {
     sessionStorage.clear();
     window.location.href = 'auth.html';
