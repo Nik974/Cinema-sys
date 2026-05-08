@@ -24,7 +24,7 @@ public class DataSeeder implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        if (!userRepository.existsByUsername("admin")) {
+        if (!userRepository.existsByUsername(adminUsername)) {
             userRepository.save(User.builder()
                     .username(adminUsername)
                     .email(adminEmail)
