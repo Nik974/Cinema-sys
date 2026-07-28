@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ghcr.io/nik974/cinema-sys:latest
+    container_name: cinema-app
+    ports:
+      - "8080:8080"
+    restart: always
