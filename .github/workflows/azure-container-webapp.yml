@@ -44,7 +44,7 @@ jobs:
           az webapp config container set \
             --name ${{ env.AZURE_WEBAPP_NAME }} \
             --resource-group DefaultResourceGroup-DEWC \
-            --docker-custom-image-name ghcr.io/nik974/cinema-sys:latest
-          --docker-registry-server-url https://ghcr.io \
-          --docker-registry-server-user ${{ github.actor }} \
-          --docker-registry-server-password ${{ secrets.GITHUB_TOKEN }}
+            --docker-custom-image-name ghcr.io/nik974/cinema-sys:latest \
+            --docker-registry-server-url https://ghcr.io \
+            --docker-registry-server-user ${{ github.actor }} \
+            --docker-registry-server-password ${{ secrets.GITHUB_TOKEN }}
